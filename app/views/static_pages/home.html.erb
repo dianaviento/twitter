@@ -1,12 +1,10 @@
-<% provide(:title, 'Home') %>
-<!DOCTYPE html>
 <% if signed_in? %>
   <div class="row">
     <aside class="span4">
-    <section>
-       <section>
+      <section>
         <%= render 'shared/user_info' %>
       </section>
+      <section>
         <%= render 'shared/micropost_form' %>
       </section>
     </aside>
